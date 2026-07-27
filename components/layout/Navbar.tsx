@@ -1,43 +1,128 @@
-import React from "react";
-import { Download } from "lucide-react";
+"use client";
 
-// TODO: make the navbar responsive and add a hamburger menu for mobile view
+import React, { useState } from "react";
+import { Download, Menu, X } from "lucide-react";
+
 export const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <nav className="bg-surface border-b border-gray-200 p-4 sticky top-0 z-50">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-primary font-bold text-xl">
+    <nav className="bg-surface/95 backdrop-blur border-b border-gray-200 p-4 sticky top-0 z-50">
+      <div className="container mx-auto flex justify-between items-center px-4 py-3 md:px-6">
+        <a href="#" className="text-xl font-bold text-primary">
           &lt;AndiMarian/&gt;
-        </div>
-        <div className="flex items-center space-x-4 gap-3">
-          <ul className="flex space-x-4">
+        </a>
+        <div className="hidden items-center gap-6 md:flex">
+          <ul className="flex items-center gap-6">
             <li>
-              <a href="#about" className="text-primary hover:text-accent">
+              <a
+                href="#about"
+                className="text-primary transition-colors hover:text-accent"
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#projects" className="text-primary hover:text-accent">
+              <a
+                href="#projects"
+                className="text-primary transition-colors hover:text-accent"
+              >
                 Projects
               </a>
             </li>
             <li>
-              <a href="#volunteer" className="text-primary hover:text-accent">
+              <a
+                href="#volunteer"
+                className="text-primary transition-colors hover:text-accent"
+              >
                 Volunteering
               </a>
             </li>
             <li>
-              <a href="#contact" className="text-primary hover:text-accent">
+              <a
+                href="#contact"
+                className="text-primary transition-colors hover:text-accent"
+              >
                 Contact
               </a>
             </li>
           </ul>
+
           <a
             href="/CV_Cilichidreanu_Andi.pdf"
             download="CV_Cilichidreanu_Andi.pdf"
-            className="flex items-center gap-2 bg-secondary text-primary font-semibold px-4 py-2 rounded-lg hover:bg-amber-400 transition-colors shadow-md shadow-gray-300"
+            className="flex items-center gap-2 rounded-lg bg-secondary px-4 py-2 font-semibold text-primary shadow-md shadow-gray-300 transition-colors hover:bg-amber-400"
           >
-            <Download className="w-4 h-4" />
+            <Download className="h-4 w-4" />
+            <span>Download my resume</span>
+          </a>
+        </div>
+
+        <button
+          type="button"
+          className="inline-flex items-center justify-center rounded-lg p-2 text-primary transition-colors hover:bg-gray-100 md:hidden"
+          aria-label="Toggle navigation menu"
+          aria-expanded={isMenuOpen}
+          onClick={() => setIsMenuOpen((value) => !value)}
+        >
+          {isMenuOpen ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <Menu className="h-6 w-6" />
+          )}
+        </button>
+      </div>
+
+      <div
+        className={`${isMenuOpen ? "block" : "hidden"} border-t border-gray-200 bg-surface md:hidden`}
+      >
+        <div className="container mx-auto px-4 py-4">
+          <ul className="flex flex-col gap-3 items-center">
+            <li>
+              <a
+                href="#about"
+                onClick={() => setIsMenuOpen(false)}
+                className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                onClick={() => setIsMenuOpen(false)}
+                className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#volunteer"
+                onClick={() => setIsMenuOpen(false)}
+                className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
+              >
+                Volunteering
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                onClick={() => setIsMenuOpen(false)}
+                className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+
+          <a
+            href="/CV_Cilichidreanu_Andi.pdf"
+            download="CV_Cilichidreanu_Andi.pdf"
+            onClick={() => setIsMenuOpen(false)}
+            className="mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-secondary px-4 py-3 font-semibold text-primary shadow-md shadow-gray-300 transition-colors hover:bg-amber-400"
+          >
+            <Download className="h-4 w-4" />
             <span>Download my resume</span>
           </a>
         </div>
