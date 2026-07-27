@@ -14,6 +14,10 @@ const config: Config = {
                 accent: '#0052CC',
                 secondary: '#FFAB00',
             },
+            fontFamily: {
+                sans: ['var(--font-inter)'],
+                mono: ['var(--font-jetbrains-mono)'],
+            }
         },
     },
     plugins: [],
