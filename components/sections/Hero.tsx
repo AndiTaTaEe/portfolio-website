@@ -11,7 +11,7 @@ export const Hero = () => {
         {/* left column*/}
         <div className="flex flex-col items-start">
           {/* main headline */}
-          <h1 className="text-5xl md:text-6xl font-extrabold font-sans text-primary min-h-[160px] md:min-h-[180px]">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-sans text-primary leading-tight md:min-h-[160px]">
             Hi, I'm <span className="text-accent font-mono">Andi</span>! <br />
             <span className="text-primary"> I'm passionate of </span>
             <span className="text-accent inline-block font-mono">
@@ -43,11 +43,11 @@ export const Hero = () => {
             experiences.
           </p>
           {/* action buttons */}
-          <div className="flex flex-wrap items-center gap-6 pt-6">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6 mt-3 p-6 justify-center sm:justify-start w-full">
             {/* see projects buttons */}
             <a
               href="#projects"
-              className="bg-accent text-surface font-semibold px-7 py-3 rounded-lg hover:bg-amber-400 transition-colors shadow-md shadow-gray-300 mr-5 mb-4 ml-4"
+              className="bg-accent text-surface font-semibold px-7 py-3 rounded-lg hover:bg-amber-400 transition-colors shadow-md shadow-gray-300 text-center w-full sm:w-auto"
             >
               See my projects
               <ChevronDown className="w-5 h-5 inline-block ml-2" />
@@ -55,7 +55,7 @@ export const Hero = () => {
             {/* contact me button */}
             <a
               href="#contact"
-              className="bg-surface text-primary font-semibold px-7 py-3 rounded-lg border border-primary hover:bg-primary hover:text-surface transition-colors shadow-md shadow-gray-300 mb-4 ml-4 mr-5"
+              className="bg-surface text-primary font-semibold px-7 py-3 rounded-lg border border-primary hover:bg-primary hover:text-surface transition-colors shadow-md shadow-gray-300 text-center w-full sm:w-auto"
             >
               Get in touch
               <MessagesSquare className="w-5 h-5 inline-block ml-2" />
@@ -63,7 +63,7 @@ export const Hero = () => {
           </div>
         </div>
         {/* right column */}
-        <div className="relative w-full aspect-square md:aspect-video lg:aspect-sqaure flex items-center justify-center transform transition-transform hover:-translate-y-2 duration-500">
+        <div className="relative w-full aspect-square md:aspect-video lg:aspect-square flex items-center justify-center transform transition-transform hover:-translate-y-2 duration-500">
           <Image
             src={photoAndi}
             alt="Andi's photo"
