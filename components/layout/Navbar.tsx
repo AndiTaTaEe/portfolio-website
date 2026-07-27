@@ -9,7 +9,7 @@ export const Navbar = () => {
         <div className="text-primary font-bold text-xl">
           &lt;AndiMarian/&gt;
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 gap-3">
           <ul className="flex space-x-4">
             <li>
               <a href="#about" className="text-primary hover:text-accent">
