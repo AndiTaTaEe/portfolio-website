@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Download, Menu, X } from "lucide-react";
+import { RESUME_LINK } from "@/constants/links";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,7 +50,7 @@ export const Navbar = () => {
           </ul>
 
           <a
-            href="/CV_Cilichidreanu_Andi.pdf"
+            href={RESUME_LINK}
             download="CV_Cilichidreanu_Andi.pdf"
             className="flex items-center gap-2 rounded-lg bg-secondary px-4 py-2 font-semibold text-primary shadow-md shadow-gray-300 transition-colors hover:bg-amber-400"
           >

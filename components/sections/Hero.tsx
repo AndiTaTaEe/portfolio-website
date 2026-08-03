@@ -9,7 +9,7 @@ export const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center bg-background px-6 py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
         {/* left column*/}
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start md:items-center lg:items-start md:text-center lg:text-left">
           {/* main headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-sans text-primary leading-tight md:min-h-[160px]">
             Hi, I'm <span className="text-accent font-mono">Andi</span>! <br />
@@ -33,7 +33,7 @@ export const Hero = () => {
             <br />
           </h1>
           {/* sub headline */}
-          <p className="text-lg md:text-xl text-primary/80 max-w-lg leading-relaxed font-light mt-5 font-sans">
+          <p className="text-lg md:text-xl text-primary/80 max-w-lg leading-relaxed font-light mt-5 font-sans md:mx-auto lg:mx-0">
             Specialized in Computer Engineering with a strong passion for
             building intelligent systems, that integrate both software and
             hardware components. I am driven by the challenges of creating
@@ -43,7 +43,7 @@ export const Hero = () => {
             experiences.
           </p>
           {/* action buttons */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6 mt-3 p-6 justify-center sm:justify-start w-full">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6 mt-3 p-6 justify-center md:justify-center lg:justify-start w-full">
             {/* see projects buttons */}
             <a
               href="#projects"
@@ -69,21 +69,10 @@ export const Hero = () => {
             alt="Andi's photo"
             width={500}
             height={500}
-            className="object-contain p-6"
+            className="object-cover p-5 rounded-lg shadow-lg shadow-gray-300"
             priority
           />
-          <div className="absolute top-10 right-10 w-4 h-4 bg-secondary rounded-full blur-sm opacity-50"></div>
-          <div className="absolute bottom-12 left-12 w-3 h-3 bg-accent rounded-full blur-sm opacity-60"></div>
         </div>
-      </div>
-      {/* background down arrow -> to projects */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer animate-bounce">
-        <a
-          href="#projects"
-          className="text-accent hover:text-blue-800 transition-colors p-2"
-          aria-label="Scroll to my projects"
-        />
-        <ArrowDown className="w-8 h-8 text-accent" />
       </div>
     </section>
   );
