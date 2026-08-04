@@ -21,7 +21,7 @@ export const featuredProjects: Project[] = [
     {
         id: "mushroom-farm-monitoring",
         title: "Mushroom Farm Monitoring System",
-        description: "A complete edge-to-cloud architecture using climate sensors for real-time data acquisition and analysis, developed for my bachelor's thesis.",
+        description: "A complete edge-to-cloud architecture using climate sensors for real-time data acquisition and analysis, developed for my bachelor's thesis. The system uses a Raspberry Pi 5 as the edge device, which collects data from various sensors and sends it to a Firebase instance for storage and analysis. The system also includes a React Native mobile application that allows users to monitor the mushroom farm's climate conditions in real-time, receive notifications, and view historical data.",
         imageSrc: MushroomFarmImage,
         tags: [
             { name: "Python", highlighted: true},
