@@ -10,7 +10,7 @@ export const Navbar = () => {
   return (
     <nav className="bg-surface/95 backdrop-blur border-b border-gray-200 p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center px-4 py-3 md:px-6">
-        <a href="#" className="text-xl font-bold text-primary">
+        <a href="#" className="text-xl font-bold text-primary font-sans">
           &lt;AndiMarian/&gt;
         </a>
         <div className="hidden items-center gap-6 md:flex">
