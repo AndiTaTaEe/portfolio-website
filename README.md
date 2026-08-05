@@ -66,5 +66,5 @@ This project is deployed to GitHub Pages using a custom GitHub Actions workflow.
 
 Passionate about integrating hardware and software to build efficient, intelligent systems. Graduate of Transilvania University of Brașov and pursuing a Master's degree in Advanced Software Services at the National University of Science and Technology POLITEHNICA of Bucharest.
 
-*   [LinkedIn](https://www.linkedin.com/in/)
+*   [LinkedIn](https://www.linkedin.com/in/andi-marian-cilichidreanu/)
 *   [GitHub](https://github.com/AndiTaTaEe)
