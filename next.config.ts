@@ -3,8 +3,8 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "export",
   images: {unoptimized: true},
+  basePath: "/portfolio-website"
 };
 
-module.exports = nextConfig;
 
 export default nextConfig;
