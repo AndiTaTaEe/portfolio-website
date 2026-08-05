@@ -11,7 +11,7 @@ export const Navbar = () => {
   return (
     <nav className="bg-surface/95 backdrop-blur border-b border-gray-200 p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center px-4 py-3 md:px-6">
-        <Link href="/#" className="text-xl font-bold text-primary font-sans">
+        <Link href="/" className="text-xl font-bold text-primary font-sans">
           &lt;AndiMarian/&gt;
         </Link>
         <div className="hidden items-center gap-6 md:flex">
@@ -81,40 +81,40 @@ export const Navbar = () => {
         <div className="container mx-auto px-4 py-4">
           <ul className="flex flex-col gap-3 items-center">
             <li>
-              <a
+              <Link
                 href="/#about"
                 onClick={() => setIsMenuOpen(false)}
                 className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#projects"
+              <Link
+                href="/#projects"
                 onClick={() => setIsMenuOpen(false)}
                 className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
               >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/#experience"
                 onClick={() => setIsMenuOpen(false)}
                 className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
               >
                 Experience
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#contact"
+              <Link
+                href="/#contact"
                 onClick={() => setIsMenuOpen(false)}
                 className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
 

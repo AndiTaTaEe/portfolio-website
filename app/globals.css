@@ -28,3 +28,7 @@ body {
   color: theme("colors.accent");
   font-weight: 400;
 }
+
+html {
+  scroll-behavior: smooth;
+}
