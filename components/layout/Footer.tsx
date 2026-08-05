@@ -3,6 +3,7 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -11,63 +12,66 @@ export const Footer = () => {
         {/* top row footer content - socials */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* andimarian logo from the navbar */}
-          <a href="#" className="text-xl font-bold text-surface font-sans">
+          <Link href="/#" className="text-xl font-bold text-surface font-sans">
             &lt;AndiMarian/&gt;
-          </a>
+          </Link>
           {/* social links */}
           <div className="flex items-center gap-6">
-            <FaGithub
-              size={24}
-              className="text-surface/70 transition-colors hover:text-secondary cursor-pointer"
-              onClick={() =>
-                window.open("https://github.com/AndiTaTaEe", "_blank")
-              }
-            />
-            <FaLinkedin
-              size={24}
-              className="text-surface/70 transition-colors hover:text-secondary cursor-pointer"
-              onClick={() =>
-                window.open(
-                  "https://www.linkedin.com/in/andi-marian-cilichidreanu/",
-                  "_blank",
-                )
-              }
-            />
-            <IoMail
-              size={24}
-              className="text-surface/70 transition-colors hover:text-secondary cursor-pointer"
-              onClick={() =>
-                window.open("mailto:ciliandimarian@gmail.com", "_blank")
-              }
-            />
+            <a
+              href="https://github.com/AndiTaTaEe"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="text-surface/70 transition-colors hover:text-secondary"
+            >
+              <FaGithub size={24} />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/andi-marian-cilichidreanu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="text-surface/70 transition-colors hover:text-secondary"
+            >
+              <FaLinkedin size={24} />
+            </a>
+
+            <a
+              href="mailto:ciliandimarian@gmail.com"
+              aria-label="Email"
+              className="text-surface/70 transition-colors hover:text-secondary"
+            >
+              <IoMail size={24} />
+            </a>
           </div>
         </div>
         {/* middle row footer content - pages */}
         <div className="flex flex-wrap justify-center md:justify-start gap-8">
-          <a
-            href="#about"
+          <Link
+            href="/#about"
             className="font-sans text-sm font-medium text-surface/80 hover:text-surface transition-colors"
           >
             About
-          </a>
-          <a
-            href="#projects"
+          </Link>
+          <Link
+            href="/#projects"
             className="font-sans text-sm font-medium text-surface/80 hover:text-surface transition-colors"
           >
             Projects
-          </a>
-          <a
-            href="#volunteer"
+          </Link>
+          <Link
+            href="/#experience"
             className="font-sans text-sm font-medium text-surface/80 hover:text-surface transition-colors"
           >
-            Volunteering
-          </a>
-          <a
-            href="#contact"
+            Experience
+          </Link>
+          <Link
+            href="/#contact"
             className="font-sans text-sm font-medium text-surface/80 hover:text-surface transition-colors"
           >
             Contact
-          </a>
+          </Link>
         </div>
         <div className="w-full border-t border-surface/70"></div>
         {/* bottom row footer content - copyright */}

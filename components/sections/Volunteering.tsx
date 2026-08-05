@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const Volunteering = () => {
   return (
-    <section id="experience" className="bg-surface py-15 px-6">
+    <section id="experience" className="bg-surface py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <h2 className="flex flex-col gap-2 font-sans text-3xl font-extrabold text-primary tracking-wide">
           My professional journey

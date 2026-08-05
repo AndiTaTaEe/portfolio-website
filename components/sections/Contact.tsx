@@ -39,6 +39,7 @@ export const Contact = () => {
               />
               <a
                 href="mailto:ciliandimarian@gmail.com"
+
                 className="font-mono text-accent font-medium hover:text-blue-800 transition-colors flex items-center gap-3"
               >
                 ciliandimarian@gmail.com
@@ -53,6 +54,7 @@ export const Contact = () => {
               <a
                 href="https://www.linkedin.com/in/andi-marian-cilichidreanu/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="font-mono text-accent font-medium hover:text-blue-800 transition-colors flex items-center gap-3"
               >
                 linkedin.com/in/andi-marian-cilichidreanu
@@ -67,6 +69,7 @@ export const Contact = () => {
               <a
                 href="https://github.com/AndiTaTaEe"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="font-mono text-accent font-medium hover:text-blue-800 transition-colors flex items-center gap-3"
               >
                 github.com/AndiTaTaEe
@@ -84,7 +87,7 @@ export const Contact = () => {
               <div className="w-3 h-3 rounded-full bg-yellow-500" />
               <div className="w-3 h-3 rounded-full bg-green-500" />
             </div>
-            <p className="font-mono text-s text-surface/50 text-center w-full">
+            <p className="font-mono text-sm text-surface/50 text-center w-full">
               Connect with me
             </p>
           </div>

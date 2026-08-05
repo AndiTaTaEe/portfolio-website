@@ -82,7 +82,7 @@ export const Navbar = () => {
           <ul className="flex flex-col gap-3 items-center">
             <li>
               <a
-                href="#about"
+                href="/#about"
                 onClick={() => setIsMenuOpen(false)}
                 className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
               >
@@ -100,11 +100,11 @@ export const Navbar = () => {
             </li>
             <li>
               <a
-                href="#volunteer"
+                href="/#experience"
                 onClick={() => setIsMenuOpen(false)}
                 className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
               >
-                Volunteering
+                Experience
               </a>
             </li>
             <li>

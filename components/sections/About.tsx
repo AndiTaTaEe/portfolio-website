@@ -2,7 +2,7 @@ import React from "react";
 
 export const About = () => {
     return (
-        <section id="about" className="bg-surface py-15 px-6">
+        <section id="about" className="bg-surface py-16 px-6">
             {/* container header */}
             <div className="max-w-7xl mx-auto">
                 <h2 className="flex flex-col gap-2 font-sans text-3xl font-extrabold text-primary tracking-wide">

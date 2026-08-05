@@ -29,7 +29,7 @@ const ProjectCard = ({
     <div className="group bg-surface rounded-xl flex flex-col overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 h-full">
       {/* image window */}
       <div className="relative bg-gray-100 w-full aspect-video">
-        <Image src={imageSrc} alt={title} fill className="object-cover" sizes="100%" />
+        <Image src={imageSrc} alt={title} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
       </div>
       {/* content window */}
       <div className="flex flex-col gap-3 p-6 grow">
@@ -66,6 +66,7 @@ const ProjectCard = ({
         <a
           href={documentationLink}
           target="_blank"
+          rel="noopener noreferrer"
           className="font-sans text-sm font-semibold text-accent flex items-center gap-1 hover:text-blue-800 transition-colors"
         >
           {documentationLinkText}
@@ -74,6 +75,7 @@ const ProjectCard = ({
         <a
           href={projectLink}
           target="_blank"
+          rel="noopener noreferrer"
           className="font-sans text-sm font-semibold text-accent flex items-center gap-1 ml-6 hover:text-blue-800 transition-colors"
         >
           {projectLinkText}
@@ -84,6 +86,7 @@ const ProjectCard = ({
           <a
           href={projectLink}
           target="_blank"
+          rel="noopener noreferrer"
           className="font-sans text-sm font-semibold text-accent flex items-center gap-1 hover:text-blue-800 transition-colors"
         >
           {projectLinkText}

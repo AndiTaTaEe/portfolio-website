@@ -33,7 +33,7 @@ export const Hero = () => {
             <br />
           </h1>
           {/* sub headline */}
-          <p className="text-lg md:text-xl text-primary/80 max-w-lg leading-relaxed font-light mt-5 font-sans md:mx-auto lg:mx-0">
+          <p className="text-lg md:text-xl text-primary/80 max-w-lg leading-relaxed font-light mt-5 font-sans md:mx-auto lg:mx-0 ">
             Specialized in Computer Engineering with a strong passion for
             building intelligent systems, that integrate both software and
             hardware components. I am driven by the challenges of creating
