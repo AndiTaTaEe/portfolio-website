@@ -36,10 +36,10 @@ export const VolunteeringTimeline = () => {
         {/* right side content box */}
         <div className="w-full md:w-[45%] pl-16 md:pl-0 md:text-left mt-2 md:mt-0">
           <h3 className="font-mono text-xs font-semibold text-primary/80 mb-2">
-            [ 2024 - 2025 ]
+            [ Apr 2025 - May 2025 ]
           </h3>
           <h2 className="font-sans text-lg font-bold text-primary mb-2">
-            Vicepresident & Marketing Department Coordinator @ BEST Brașov
+            Project Manager Apprentice @ METAMINDS
           </h2>
         </div>
       </div>
@@ -52,10 +52,10 @@ export const VolunteeringTimeline = () => {
         {/* left side content box*/}
         <div className="w-full md:w-[45%] pl-16 md:pl-0 md:text-right mt-2 md:mt-0">
           <h3 className="font-mono text-xs font-semibold text-primary/80 mb-2">
-            [ May 2024 ]
+            [ 2024 - 2025 ]
           </h3>
           <h2 className="font-sans text-lg font-bold text-primary mb-2">
-            Volunteer for PeakIT event @ AgileHub Brașov
+            Vicepresident & Marketing Department Coordinator @ BEST Brașov
           </h2>
         </div>
         <div className="hidden md:block md:w-[45%]"></div>

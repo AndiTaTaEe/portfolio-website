@@ -12,6 +12,7 @@ const inter = Inter({
 const jetBrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
+  preload: false,
 });
 
 export const metadata: Metadata = {

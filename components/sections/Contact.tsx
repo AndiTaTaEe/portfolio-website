@@ -78,6 +78,7 @@ export const Contact = () => {
         <div className="bg-primary rounded-xl shadow-2xl overflow-hidden flex flex-col">
           {/* top row form header */}
           <div className="bg-[#0F1D36] py-3 flex items-center justify-center relative">
+            {/* three colored circles */}
             <div className="flex gap-2 absolute left-4">
               <div className="w-3 h-3 rounded-full bg-red-500" />
               <div className="w-3 h-3 rounded-full bg-yellow-500" />
