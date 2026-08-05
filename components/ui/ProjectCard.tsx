@@ -64,7 +64,7 @@ const ProjectCard = ({
         {(documentationLink && projectLink) ? (
           <>
         <a
-          href={`/portfolio-website/${documentationLink}`}
+          href={`/portfolio-website${documentationLink}`}
           target="_blank"
           rel="noopener noreferrer"
           className="font-sans text-sm font-semibold text-accent flex items-center gap-1 hover:text-blue-800 transition-colors"
@@ -73,7 +73,7 @@ const ProjectCard = ({
           <ArrowRight className="w-4 h-4 text-accent group-hover:translate-x-1 transition-transform duration-200" />
         </a>
         <a
-          href={`/portfolio-website/${projectLink}`}
+          href={projectLink}
           target="_blank"
           rel="noopener noreferrer"
           className="font-sans text-sm font-semibold text-accent flex items-center gap-1 ml-6 hover:text-blue-800 transition-colors"
@@ -84,7 +84,7 @@ const ProjectCard = ({
         </>
         ) : (
           <a
-          href={`/portfolio-website/${projectLink}`}
+          href={projectLink}
           target="_blank"
           rel="noopener noreferrer"
           className="font-sans text-sm font-semibold text-accent flex items-center gap-1 hover:text-blue-800 transition-colors"
