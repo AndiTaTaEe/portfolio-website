@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# <AndiMarian/> Portfolio Website
 
-## Getting Started
+A personal developer portfolio built with **Next.js** and **Tailwind CSS**, designed to showcase my engineering journey, technical projects, and professional experience. 
 
-First, run the development server:
+The application is fully responsive and statically exported for seamless hosting on GitHub Pages.
 
+### Live Demo
+**[View the Live Portfolio](https://anditataee.github.io/portfolio-website/)**
+
+---
+
+## Tech Stack
+
+*   **Framework:** [Next.js](https://nextjs.org/) (App Router, Static Export)
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+*   **Language:** [TypeScript](https://www.typescriptlang.org/)
+*   **Icons:** [Lucide React](https://lucide.dev/)
+*   **Deployment:** GitHub Pages (via GitHub Actions)
+
+---
+
+## Featured Projects Highlighted
+
+This portfolio highlights projects bridging hardware and software, including:
+
+1.  **Mushroom Farm Monitoring System:** An edge-to-cloud IoT architecture utilizing a Raspberry Pi 5, environmental sensors, Firebase, and a React Native mobile application for real-time climate monitoring.
+2.  **BCD to Digits Converter:** A functional verification environment built with SystemVerilog and UVM methodology.
+3.  **Food Delivery Web Application:** A full-stack application built on the MERN stack featuring secure Stripe payment processing.
+4.  **Traffic Lights Control System:** A finite state machine implementation in Verilog on a MachXO3LF FPGA.
+
+---
+
+## Local Development
+
+To run this project locally on your machine:
+
+**1. Clone the repository**
+```bash
+git clone [https://github.com/AndiTaTaEe/portfolio-website.git](https://github.com/AndiTaTaEe/portfolio-website.git)
+cd portfolio-website
+```
+**2. Install dependencies**
+```bash
+npm install
+```
+**3. Run the dev server**
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Open http://localhost:3000 in your browser to view the application.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment architecture
+This project is deployed to GitHub Pages using a custom GitHub Actions workflow. Because it is hosted on a subpath (`/portfolio-website`), the `next.config.ts` has been heavily optimized for static HTML export:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*   **Static Export:** Configured with `output: "export"`.
+*   **Asset Routing:** Utilizes `basePath: "/portfolio-website"` to ensure all compiled CSS, JS, and local PDFs map correctly in production.
+*   **Image Optimization:** Unoptimized native Next.js images to allow static hosting without a Node.js runtime.
+*   **Jekyll Bypass:** Contains a `.nojekyll` file in the public directory to ensure the `_next` folder is not purged during deployment.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## About the Author
 
-To learn more about Next.js, take a look at the following resources:
+**Andi-Marian Cilichidreanu**  
+*Computer Engineer | IoT & Distributed Systems*
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Passionate about integrating hardware and software to build efficient, intelligent systems. Graduate of Transilvania University of Brașov and pursuing a Master's degree in Advanced Software Services at the National University of Science and Technology POLITEHNICA of Bucharest.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*   [LinkedIn](https://www.linkedin.com/in/)
+*   [GitHub](https://github.com/AndiTaTaEe)
