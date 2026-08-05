@@ -51,7 +51,7 @@ export const Navbar = () => {
           </ul>
 
           <a
-            href={RESUME_LINK}
+            href={`/portfolio-website/${RESUME_LINK}`}
             download="CV_Cilichidreanu_Andi.pdf"
             className="flex items-center gap-2 rounded-lg bg-secondary px-4 py-2 font-semibold text-primary shadow-md shadow-gray-300 transition-colors hover:bg-amber-400"
           >
@@ -119,7 +119,7 @@ export const Navbar = () => {
           </ul>
 
           <a
-            href="/CV_Cilichidreanu_Andi.pdf"
+            href={`/portfolio-website/${RESUME_LINK}`}
             download="CV_Cilichidreanu_Andi.pdf"
             onClick={() => setIsMenuOpen(false)}
             className="mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-secondary px-4 py-3 font-semibold text-primary shadow-md shadow-gray-300 transition-colors hover:bg-amber-400"
