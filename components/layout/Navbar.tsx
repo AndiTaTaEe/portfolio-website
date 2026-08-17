@@ -11,14 +11,14 @@ export const Navbar = () => {
   return (
     <nav className="bg-surface/95 backdrop-blur border-b border-gray-200 p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center px-4 py-3 md:px-6">
-        <Link href="" className="text-xl font-bold text-primary font-sans">
+        <Link href="/" className="text-xl font-bold text-primary font-sans">
           &lt;AndiMarian/&gt;
         </Link>
         <div className="hidden items-center gap-6 md:flex">
           <ul className="flex items-center gap-6">
             <li>
               <Link
-                href="#about"
+                href="/#about"
                 className="text-primary transition-colors hover:text-accent"
               >
                 About
@@ -26,7 +26,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                href="#projects"
+                href="/#projects"
                 className="text-primary transition-colors hover:text-accent"
               >
                 Projects
@@ -34,7 +34,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                href="#experience"
+                href="/#experience"
                 className="text-primary transition-colors hover:text-accent"
               >
                 Experience
@@ -42,7 +42,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                href="#contact"
+                href="/#contact"
                 className="text-primary transition-colors hover:text-accent"
               >
                 Contact
@@ -82,7 +82,7 @@ export const Navbar = () => {
           <ul className="flex flex-col gap-3 items-center">
             <li>
               <Link
-                href="#about"
+                href="/#about"
                 onClick={() => setIsMenuOpen(false)}
                 className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
               >
@@ -91,7 +91,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                href="#projects"
+                href="/#projects"
                 onClick={() => setIsMenuOpen(false)}
                 className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
               >
@@ -100,7 +100,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                href="#experience"
+                href="/#experience"
                 onClick={() => setIsMenuOpen(false)}
                 className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
               >
@@ -109,7 +109,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                href="#contact"
+                href="/#contact"
                 onClick={() => setIsMenuOpen(false)}
                 className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
               >
