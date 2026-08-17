@@ -4,15 +4,27 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import Link from "next/link";
+import {usePathname} from "next/navigation";
 
 export const Footer = () => {
+
+  const pathname = usePathname();
+  // helper function for generating section hrefs based on the current pathname
+  const sectionHref = (id: string) => {
+    if (pathname === "/") {
+      return `#${id}`;
+    }
+    return `/#${id}`;
+  }
+
+
   return (
     <footer className="bg-primary py-12 px-6">
       <div className="max-w-7xl mx-auto flex flex-col gap-8">
         {/* top row footer content - socials */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* andimarian logo from the navbar */}
-          <Link href="/#" className="text-xl font-bold text-surface font-sans">
+          <Link href="/" className="text-xl font-bold text-surface font-sans">
             &lt;AndiMarian/&gt;
           </Link>
           {/* social links */}
@@ -49,25 +61,25 @@ export const Footer = () => {
         {/* middle row footer content - pages */}
         <div className="flex flex-wrap justify-center md:justify-start gap-8">
           <Link
-            href="/#about"
+            href={sectionHref("about")}
             className="font-sans text-sm font-medium text-surface/80 hover:text-surface transition-colors"
           >
             About
           </Link>
           <Link
-            href="/#projects"
+            href={sectionHref("projects")}
             className="font-sans text-sm font-medium text-surface/80 hover:text-surface transition-colors"
           >
             Projects
           </Link>
           <Link
-            href="/#experience"
+            href={sectionHref("experience")}
             className="font-sans text-sm font-medium text-surface/80 hover:text-surface transition-colors"
           >
             Experience
           </Link>
           <Link
-            href="/#contact"
+            href={sectionHref("contact")}
             className="font-sans text-sm font-medium text-surface/80 hover:text-surface transition-colors"
           >
             Contact
