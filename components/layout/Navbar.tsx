@@ -4,9 +4,19 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Download, Menu, X } from "lucide-react";
 import { RESUME_LINK } from "@/constants/links";
+import {usePathname} from "next/navigation";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  // helper function for generating section hrefs based on the current pathname
+  const sectionHref = (id: string) => {
+    if (pathname === "/") {
+      return `#${id}`;
+    }
+    return `/#${id}`;
+  }
 
   return (
     <nav className="bg-surface/95 backdrop-blur border-b border-gray-200 p-4 sticky top-0 z-50">
@@ -18,7 +28,7 @@ export const Navbar = () => {
           <ul className="flex items-center gap-6">
             <li>
               <Link
-                href="/#about"
+                href={sectionHref("about")}
                 className="text-primary transition-colors hover:text-accent"
               >
                 About
@@ -26,7 +36,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/#projects"
+                href={sectionHref("projects")}
                 className="text-primary transition-colors hover:text-accent"
               >
                 Projects
@@ -34,7 +44,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/#experience"
+                href={sectionHref("experience")}
                 className="text-primary transition-colors hover:text-accent"
               >
                 Experience
@@ -42,7 +52,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/#contact"
+                href={sectionHref("contact")}
                 className="text-primary transition-colors hover:text-accent"
               >
                 Contact
@@ -82,7 +92,7 @@ export const Navbar = () => {
           <ul className="flex flex-col gap-3 items-center">
             <li>
               <Link
-                href="/#about"
+                href={sectionHref("about")}
                 onClick={() => setIsMenuOpen(false)}
                 className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
               >
@@ -91,7 +101,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/#projects"
+                href={sectionHref("projects")}
                 onClick={() => setIsMenuOpen(false)}
                 className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
               >
@@ -100,7 +110,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/#experience"
+                href={sectionHref("experience")}
                 onClick={() => setIsMenuOpen(false)}
                 className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
               >
@@ -109,7 +119,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/#contact"
+                href={sectionHref("contact")}
                 onClick={() => setIsMenuOpen(false)}
                 className="block rounded-lg px-3 py-2 text-primary transition-colors hover:bg-gray-100 hover:text-accent"
               >
